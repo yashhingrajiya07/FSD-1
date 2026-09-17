@@ -1,0 +1,18 @@
+table:-
+<table>
+<caption>
+<thead>
+<tbody>
+<tfoot>
+<tr>
+<th>
+<td>
+
+attributes of <table>:-
+width
+border
+align
+bgcolor
+cellpadding ->insert in cell
+cellspacing ->indert out cell
+rules ->all/cols/groups/rows/none
