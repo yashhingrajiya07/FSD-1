@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC 3(2)</title>
+    <style>
+        P{border: 3px solid black;padding: 20px; text-align: justify;}
+        p::first-line{
+            font-size: 40px;
+            color: rgb(5, 29, 247);
+            text-decoration: underline;
+            font-variant: small-caps ;
+        }
+        p::first-letter{
+            color: rgb(115, 4, 206);
+            font-size: 80px;
+        }
+        p::before{
+            content: "😎";
+        }
+        P::after{
+            content: "last content after lorem 😎" url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTbe2QWGjB3ipqkkJLXEY06tLb34Ex0n_QOTVOSQLkmw&s=10);
+            color: green;
+            
+            font-size: 15px;
+        }
+        p::selection{
+            background-color: lightgreen;
+            color: red;
+        }
+        ul li::marker{
+            font-size: 35px;
+            color: rgb(2, 121, 41);
+            content: "⭕";
+        }
+    </style>
+</head>
+<body>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ex repellendus veniam quaerat nemo dolore eos blanditiis sint sed fugit. Ducimus delectus, totam iusto dolores voluptate perspiciatis dolorum distinctio quia?</P>
+    <ul>
+        <li>task 1</li>
+        <li>task 2</li>
+        <li>task 3</li>
+        <li class="active">task 4</li>
+    </ul>
+</body>
+</html>
