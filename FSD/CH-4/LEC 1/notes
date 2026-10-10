@@ -1,0 +1,5 @@
+priority:- 
+1. inline
+2. id
+3. class,attributes
+4. element,psudo
