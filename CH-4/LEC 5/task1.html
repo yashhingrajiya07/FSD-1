@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC 5(4)</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid;
+            position: relative;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            opacity: 0.4;
+        }
+        .bl{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+        }
+        .tr{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        .container:hover{
+            border-bottom-left-radius:50px ;
+            border-top-right-radius:50px ;
+            border: 5PX dotted red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image2.avif">
+        <div class="bl">BOTTOM LEFT</div>
+        <div class="tr">TOP RIGHT</div>
+    </div>
+</body>
+</html>
