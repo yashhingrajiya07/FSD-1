@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC 1(1)</title>
+    <style>
+        h1{
+            animation-name: move;
+            color: blue;
+            font-size: 30px;
+            animation-duration: 5s;
+            animation-delay: 1ms;
+            animation-direction:alternate;
+            /*animation-iteration-count: infinite;*/
+            animation-iteration-count: 2;
+            animation-timing-function: ease-in;
+        }
+        @keyframes move{
+            0%{color: transparent; transform: scale(1) translate(0);}
+            25%{color: aqua; transform: scale(1.2) translate(50%,50%);}
+            50%{color: cornflowerblue; transform: translate(50%,50%);}
+            100%{color: blue; transform: translate(100%);}
+        }
+        .d1:hover{
+            background-color: green;
+            transform: scale(2) translateX(50px) rotate(1200deg);
+        }
+        .d1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(49, 94, 241);
+            margin: 20px auto;
+            transition-property:all ;
+            transition-duration: 7s;
+            transition-delay: 2ms;
+            transition-timing-function: ease-in-out;
+        }
+        .d2{
+            width: 100px;
+            height: 100px;
+            background-color: palevioletred;
+            border-radius: 25%;
+            margin: 50px auto;
+            animation: bounce 3s ease-in 1s alternate infinite;
+        }
+        @keyframes bounce{
+            0%{transform:translateY(0) rotate(3600deg);}
+            100%{color: blue; transform: translateY(200px) rotate(360deg); background-color: black;}
+        }
+    </style>
+</head>
+<body>
+    <h1>B2 Student</h1>
+    <div class="d1" align="center">hello</div>
+    <div class="d2"></div>
+</body>
+</html>
